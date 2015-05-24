@@ -7,6 +7,7 @@
 //
 
 #import "MainCharacter.h"
+#import "SpriteModifier.h"
 
 @interface MainCharacter()
 {
@@ -40,24 +41,14 @@ static MainCharacter* instance;
 {
     self = [super init];
     if (self) {
-        self.character = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
+        self.character = [SKSpriteNode spriteNodeWithImageNamed:@"red_dot"];
         self.character.position = position;
-        self.character.size = [self scaleSizeDueToScreenSize:[self.character size]];
+        self.character.size = [SpriteModifier scaleSizeDueToScreenSize:[self.character size] WithPercentage:20];
+        
+        self.character.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.character.size.height/2];
+        self.character.physicsBody.dynamic = YES;
     }
     return self;
-}
-
-- (CGSize)scaleSizeDueToScreenSize:(CGSize)spriteSize
-{
-    CGSize newSize;
-    CGRect mainWindowSize = [[UIScreen mainScreen] bounds];
-    
-    CGFloat mainHeight = mainWindowSize.size.height;
-    
-    newSize.height = (mainHeight / spriteSize.height) * 20;
-    newSize.width = spriteSize.width * (newSize.height / spriteSize.height);
-    
-    return newSize;
 }
 
 

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBCDFD841B127E1B0047F054 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCDFD831B127E1B0047F054 /* Math.m */; };
+		EBCDFD871B12897B0047F054 /* red_dot.png in Resources */ = {isa = PBXBuildFile; fileRef = EBCDFD861B12897B0047F054 /* red_dot.png */; };
+		EBCDFD8A1B128D5A0047F054 /* SpriteModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCDFD891B128D5A0047F054 /* SpriteModifier.m */; };
+		EBCDFD8D1B128DF30047F054 /* YellowEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCDFD8C1B128DF30047F054 /* YellowEnemy.m */; };
+		EBCDFD8F1B128EAE0047F054 /* yellow_dot.png in Resources */ = {isa = PBXBuildFile; fileRef = EBCDFD8E1B128EAE0047F054 /* yellow_dot.png */; };
 		EBF8BDB31B08B97000D13BCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF8BDB21B08B97000D13BCD /* Foundation.framework */; };
 		EBF8BDB51B08B97000D13BCD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF8BDB41B08B97000D13BCD /* CoreGraphics.framework */; };
 		EBF8BDB71B08B97000D13BCD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBF8BDB61B08B97000D13BCD /* UIKit.framework */; };
@@ -39,6 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EBCDFD821B127E1B0047F054 /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
+		EBCDFD831B127E1B0047F054 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
+		EBCDFD861B12897B0047F054 /* red_dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_dot.png; sourceTree = "<group>"; };
+		EBCDFD881B128D5A0047F054 /* SpriteModifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteModifier.h; sourceTree = "<group>"; };
+		EBCDFD891B128D5A0047F054 /* SpriteModifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteModifier.m; sourceTree = "<group>"; };
+		EBCDFD8B1B128DF30047F054 /* YellowEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowEnemy.h; sourceTree = "<group>"; };
+		EBCDFD8C1B128DF30047F054 /* YellowEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowEnemy.m; sourceTree = "<group>"; };
+		EBCDFD8E1B128EAE0047F054 /* yellow_dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_dot.png; sourceTree = "<group>"; };
 		EBF8BDAF1B08B97000D13BCD /* Jump So High.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jump So High.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF8BDB21B08B97000D13BCD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EBF8BDB41B08B97000D13BCD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -92,6 +105,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EBCDFD851B127E610047F054 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EBCDFD821B127E1B0047F054 /* Math.h */,
+				EBCDFD831B127E1B0047F054 /* Math.m */,
+				EBCDFD881B128D5A0047F054 /* SpriteModifier.h */,
+				EBCDFD891B128D5A0047F054 /* SpriteModifier.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		EBF8BDA61B08B97000D13BCD = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +150,9 @@
 		EBF8BDBA1B08B97000D13BCD /* Jump So High */ = {
 			isa = PBXGroup;
 			children = (
+				EBCDFD8E1B128EAE0047F054 /* yellow_dot.png */,
+				EBCDFD861B12897B0047F054 /* red_dot.png */,
+				EBCDFD851B127E610047F054 /* Util */,
 				EBF8BDF41B08BBF400D13BCD /* Characters */,
 				EBF8BDC31B08B97000D13BCD /* AppDelegate.h */,
 				EBF8BDC41B08B97000D13BCD /* AppDelegate.m */,
@@ -176,6 +203,8 @@
 			children = (
 				EBF8BDF11B08BBE800D13BCD /* MainCharacter.h */,
 				EBF8BDF21B08BBE800D13BCD /* MainCharacter.m */,
+				EBCDFD8B1B128DF30047F054 /* YellowEnemy.h */,
+				EBCDFD8C1B128DF30047F054 /* YellowEnemy.m */,
 			);
 			name = Characters;
 			sourceTree = "<group>";
@@ -259,6 +288,8 @@
 				EBF8BDD31B08B97000D13BCD /* Spaceship.png in Resources */,
 				EBF8BDD51B08B97000D13BCD /* Images.xcassets in Resources */,
 				EBF8BDCB1B08B97000D13BCD /* Main_iPad.storyboard in Resources */,
+				EBCDFD8F1B128EAE0047F054 /* yellow_dot.png in Resources */,
+				EBCDFD871B12897B0047F054 /* red_dot.png in Resources */,
 				EBF8BDC81B08B97000D13BCD /* Main_iPhone.storyboard in Resources */,
 				EBF8BDBF1B08B97000D13BCD /* InfoPlist.strings in Resources */,
 			);
@@ -280,8 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF8BDD11B08B97000D13BCD /* MyScene.m in Sources */,
+				EBCDFD841B127E1B0047F054 /* Math.m in Sources */,
+				EBCDFD8D1B128DF30047F054 /* YellowEnemy.m in Sources */,
 				EBF8BDCE1B08B97000D13BCD /* ViewController.m in Sources */,
 				EBF8BDC51B08B97000D13BCD /* AppDelegate.m in Sources */,
+				EBCDFD8A1B128D5A0047F054 /* SpriteModifier.m in Sources */,
 				EBF8BDC11B08B97000D13BCD /* main.m in Sources */,
 				EBF8BDF31B08BBE800D13BCD /* MainCharacter.m in Sources */,
 			);
@@ -500,6 +534,7 @@
 				EBF8BDED1B08B97000D13BCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBF8BDEE1B08B97000D13BCD /* Build configuration list for PBXNativeTarget "Jump So HighTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +543,7 @@
 				EBF8BDF01B08B97000D13BCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

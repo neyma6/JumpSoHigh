@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>140C5BCD-046D-4475-8970-87B07C461440</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Jump So High</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>042C5626-5FD0-4CF6-A387-E65C9B61CB3D</key>
+		<string>https://github.com/neyma6/JumpSoHigh.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Jump So High.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>042C5626-5FD0-4CF6-A387-E65C9B61CB3D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/neyma6/JumpSoHigh.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>042C5626-5FD0-4CF6-A387-E65C9B61CB3D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>042C5626-5FD0-4CF6-A387-E65C9B61CB3D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JumpSoHigh</string>
+		</dict>
+	</array>
+</dict>
+</plist>
